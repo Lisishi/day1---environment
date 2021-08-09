@@ -4,7 +4,7 @@
 
 1. 前往 https://www.oracle.com/java/technologies/java-se-glance.html下载JDK并且安装
 
-![image-20210809122705617](/Users/sishili/Library/Application Support/typora-user-images/image-20210809122705617.png)
+   <img src="image-20210809140234544.png" alt="image-20210809140234544" style="zoom:50%;" />
 
 
 
@@ -12,7 +12,7 @@
 
    前往MacBook 终端，修改环境
 
-   ![image-20210809122918093](/Users/sishili/Library/Application Support/typora-user-images/image-20210809122918093.png)
+   <img src="image-20210809140318620.png" alt="image-20210809140318620" style="zoom:50%;" />
 
 
 
@@ -21,7 +21,7 @@
 
    显示以下内容为成功：
 
-   ![image-20210809123604238](/Users/sishili/Library/Application Support/typora-user-images/image-20210809123604238.png)
+   <img src="image-20210809140505667.png" alt="image-20210809140505667" style="zoom:50%;" />
 
    ## - IDE安装
 
@@ -31,13 +31,13 @@
 
    
 
-![image-20210809124104405](/Users/sishili/Library/Application Support/typora-user-images/image-20210809124104405.png)
+<img src="image-20210809140628874.png" alt="image-20210809140628874" style="zoom:50%;" />
 
 
 
 2. 打开 eclipse，安装Eclipse IDE for Java Developer
 
-   ![image-20210809124206980](/Users/sishili/Library/Application Support/typora-user-images/image-20210809124206980.png)
+   <img src="image-20210809140648700.png" alt="image-20210809140648700" style="zoom: 50%;" />
 
 
 
@@ -59,21 +59,27 @@
    -XX:+DisableExplicitGC
    -XX:-UseBiasedLocking
 
-   ## ![image-20210809124410023](/Users/sishili/Library/Application Support/typora-user-images/image-20210809124410023.png)- Git 安装
+   <img src="image-20210809140707761.png" alt="image-20210809140707761" style="zoom:50%;" />
+
+   
+
+   
+
+   ## - Git 安装
 
    1. 前往 https://git-scm.com/download/mac下载git 客户端
 
    2. 前往https://brew.sh查看安装homebrew需求
-
+   
    3. 在terminal中输入 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" 安装homebrew
-
+   
    4. 在terminal中输入以下代码安装git：
-
+   
       1）、brew install git
       2）、brew install git-gui
 
    
-
+   
    ## -  Git与Github链接
 
    1. 设置SSH keys 将git与github链接
@@ -81,16 +87,16 @@
       ```shell
       $ ssh-keygen -t ed25519 -C "lexieli577@163.com"
       ```
-
    
-
+   
+   
    2. 复制SSH pubic key 到 click board
-
+   
       ```shell
       $ pbcopy < ~/.ssh/id_ed25519.pub
       # Copies the contents of the id_ed25519.pub file to your clipboard
       ```
-
+   
    3. 去profile，setting查看SSH，添加 SSH keys
    4.  git clone SSH
 
