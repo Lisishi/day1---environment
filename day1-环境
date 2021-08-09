@@ -1,0 +1,96 @@
+# Day1：安装环境 for Mac
+
+## - JDK安装
+
+1. 前往 https://www.oracle.com/java/technologies/java-se-glance.html下载JDK并且安装
+
+![image-20210809122705617](/Users/sishili/Library/Application Support/typora-user-images/image-20210809122705617.png)
+
+
+
+2. 环境变量设置
+
+   前往MacBook 终端，修改环境
+
+   ![image-20210809122918093](/Users/sishili/Library/Application Support/typora-user-images/image-20210809122918093.png)
+
+
+
+3. 验证安装配置结果
+   运行Terminal，执行java -version 命令查看 
+
+   显示以下内容为成功：
+
+   ![image-20210809123604238](/Users/sishili/Library/Application Support/typora-user-images/image-20210809123604238.png)
+
+   ## - IDE安装
+
+   1. 前往https://www.eclipse.org 下载 eclipse installer for mac
+
+      
+
+   
+
+![image-20210809124104405](/Users/sishili/Library/Application Support/typora-user-images/image-20210809124104405.png)
+
+
+
+2. 打开 eclipse，安装Eclipse IDE for Java Developer
+
+   ![image-20210809124206980](/Users/sishili/Library/Application Support/typora-user-images/image-20210809124206980.png)
+
+
+
+3.  IDE启动优化：
+
+   下载Spring Tool Suite 4 到
+
+   /Applications/SpringToolSuite4.app/Contents/Eclipse/SpringToolSuite4.ini
+
+   编辑 SpringToolSuite4.ini，更新以下内容：
+
+   -Xms2048m
+   -Xmx2048m
+   -XX:+UseG1GC
+   -XX:MaxGCPauseMillis=100 
+   -XX:GCPauseIntervalMillis=500
+   -XX:MetaspaceSize=512M 
+   -Xverify:none
+   -XX:+DisableExplicitGC
+   -XX:-UseBiasedLocking
+
+   ## ![image-20210809124410023](/Users/sishili/Library/Application Support/typora-user-images/image-20210809124410023.png)- Git 安装
+
+   1. 前往 https://git-scm.com/download/mac下载git 客户端
+
+   2. 前往https://brew.sh查看安装homebrew需求
+
+   3. 在terminal中输入 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" 安装homebrew
+
+   4. 在terminal中输入以下代码安装git：
+
+      1）、brew install git
+      2）、brew install git-gui
+
+   
+
+   ## -  Git与Github链接
+
+   1. 设置SSH keys 将git与github链接
+
+      ```shell
+      $ ssh-keygen -t ed25519 -C "lexieli577@163.com"
+      ```
+
+   
+
+   2. 复制SSH pubic key 到 click board
+
+      ```shell
+      $ pbcopy < ~/.ssh/id_ed25519.pub
+      # Copies the contents of the id_ed25519.pub file to your clipboard
+      ```
+
+   3. 去profile，setting查看SSH，添加 SSH keys
+   4.  git clone SSH
+
